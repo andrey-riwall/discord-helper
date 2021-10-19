@@ -1,1 +1,1 @@
-﻿# discord-helper(shabby)
+﻿# telegram-helper(shabby)
