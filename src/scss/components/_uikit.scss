@@ -1,0 +1,89 @@
+.product__card {
+  transition: transform .25s ease;
+}
+
+.product__card:hover,
+.product__card:focus,
+.product__card:active {
+  transform: translateY(vw(-15));
+}
+
+.btn {
+  transition: background .25s ease, color .25s ease;
+}
+
+.product__card:hover .btn,
+.product__card:focus .btn ,
+.product__card:active .btn {
+  background: var(--color-btn) !important;
+}
+
+.product__card:nth-child(1) {
+  &:hover .btn,
+  &:focus .btn ,
+  &:active .btn {
+    color: var(--color-main);
+  }
+}
+
+
+
+.btn_tg {
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.btn_tg:hover, 
+.btn_tg:focus, 
+.btn_tg:active {
+  opacity: .75;
+  transform: scale(.97);
+}
+
+
+.nav__link {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: vw(-3);
+    height: vw(2);
+    background: var(--color-header-text);
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform .25s ease;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+
+
+/* W3C standard
+сейчас только для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-main) var(--color-bg);
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: vw(12);
+  width: vw(12);
+}
+*::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-main);
+  border-radius: vw(10);
+  border: vw(3) solid var(--color-bg);
+}

@@ -1,6 +1,25 @@
 .footer {
+  padding: vw(10) 0;
   height: vw(70);
   background: var(--color-bg-footer);
+
+  @include medium {
+    padding: vw(20) 0;
+    height: vw(100);
+  }
+
+  @include mobile {
+    padding: vw(30) 0;
+    height: vw(150);
+  }
+}
+
+.footer .nav {
+  @include mobile {
+    width: 100%;
+    padding: 0 vw(100);
+    display: block;
+  }
 }
 
 .footer__container {

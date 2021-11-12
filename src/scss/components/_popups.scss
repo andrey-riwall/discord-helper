@@ -1,0 +1,78 @@
+.more {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+
+  width: vw(500);
+  height: vw(700);
+
+  padding: vw(40);
+  border-radius: vw(15);
+  background: var(--color-popup);
+  
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -60%);
+  transition: opacity .4s ease, visibility .4s ease, transform .4s ease;
+
+  @include medium {
+    width: vw(1000);
+    height: vw(1500);
+  }
+  @include mobile {
+    width: vw(1300);
+    height: vw(2200);
+  }
+}
+
+.more.is_active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  transition: opacity .4s ease .2s, visibility .4s ease .2s, transform .4s ease .2s;
+}
+
+.close {
+  position: absolute;
+  top: vw(40);
+  right: vw(40);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: vw(40);
+  height: vw(40);
+
+  @include medium {
+    width: vw(80);
+    height: vw(80);
+  }
+  @include medium {
+    width: vw(120);
+    height: vw(120);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: vw(2);
+    background: white;
+    transform: rotate(-45deg);
+
+    @include medium {
+      height: vw(4);
+    }
+    @include medium {
+      height: vw(6);
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+}

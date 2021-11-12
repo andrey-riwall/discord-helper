@@ -1,6 +1,11 @@
 .product {
   padding: vw(45) 0;
   padding-top: vw(90);
+
+  @include medium {
+    padding: vw(80) 0;
+   padding-top: vw(160);
+  }
 }
 
 .product__cards {
@@ -10,6 +15,14 @@
   grid-gap: vw(50);
 
   height: vw(750);
+
+  @include medium {
+    height: vw(1100);
+  }
+  @include mobile {
+    grid-gap: vw(70);
+    height: vw(1800);
+  }
 }
 
 .product__card {
@@ -17,7 +30,7 @@
   padding: vw(40);
   padding-bottom: vw(126);
   background: var(--color-card);
-  border-radius: vw((15));
+  border-radius: vw(15);
 
   &:nth-child(1) {
     padding-bottom: vw(130);
@@ -26,7 +39,27 @@
     .product__btn {
       padding: vw(16) vw(28);
       color: var(--color-text);
+
+      @include medium {
+        padding: vw(22) vw(36);
+      }
+      @include mobile {
+        padding: vw(40) vw(100);
+      }
     }
+  }
+
+  &:not(:first-child) {
+    .btn {
+      background: transparent;
+    }
+  }
+
+  @include medium {
+    padding: vw(40);
+    padding-bottom: vw(126);
+    background: var(--color-card);
+    border-radius: vw(15);
   }
 }
 

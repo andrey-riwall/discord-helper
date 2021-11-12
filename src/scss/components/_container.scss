@@ -3,4 +3,8 @@
   max-width: vw(1470); //1440px
   padding: 0 vw(15);
   margin: 0 auto;
+
+  @include medium {
+    max-width: vw(1850);
+  }
 }

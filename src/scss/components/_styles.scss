@@ -8,13 +8,31 @@
   color: var(--color-desc);
 
   margin-bottom: vw(10);
+
+  @include medium {
+    font-size: vw(28);
+    margin-bottom: vw(10);
+  }
+  @include mobile {
+    font-size: vw(34);
+    margin-bottom: vw(30);
+  }
 }
 
 .heading {
-  font-size: vw(36);
+  font-size: vw(30);
   line-height: 100%;
 
   margin-bottom: vw(40);
+
+  @include medium {
+    font-size: vw(65);
+    margin-bottom: vw(40);
+  }
+  @include mobile {
+    font-size: vw(85);
+    margin-bottom: vw(70);
+  }
 }
 
 
@@ -24,6 +42,13 @@
   font-size: vw(24);
   line-height: 150%;
   color: var(--color-desc);
+
+  @include medium {
+    font-size: vw(44);
+  }
+  @include mobile {
+    font-size: vw(60);
+  }
 }
 
 
@@ -37,6 +62,23 @@
   padding: vw(10) vw(28) vw(11) vw(28);
   border: vw(1) solid var(--color-main);
   border-radius: vw(10);
+
+  @include medium {
+    font-size: vw(32);
+    line-height: 100%;
+
+    padding: vw(10) vw(28) vw(11) vw(28);
+    border: vw(1) solid var(--color-main);
+    border-radius: vw(10);
+  }
+  @include mobile {
+    font-size: vw(52);
+    line-height: 100%;
+
+    padding: vw(15) vw(160) vw(16) vw(160);
+    border: vw(1) solid var(--color-main);
+    border-radius: vw(10);
+  }
 }
 
 .btn {
@@ -48,4 +90,15 @@
   font-size: vw(18);
   line-height: 100%;
   color: var(--color-main);
+
+  @include medium {
+    padding: vw(20) vw(36);
+    border-radius: vw(5);
+    font-size: vw(32);
+  }
+  @include mobile {
+    padding: vw(35) vw(100);
+    border-radius: vw(15);
+    font-size: vw(45);
+  }
 }

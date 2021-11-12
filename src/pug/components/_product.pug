@@ -11,9 +11,10 @@ section.product#product
       span.product__up-heading.up-heading #{productUpHeading}
       h2.product__heading.heading #{productHeading}
     ul.product__cards 
-      li.product__card 
+      // каждая li - это по сути кнопка, у каждой li разные id, я их просто пронумерую
+      li.product__card(tabindex='0' data-path='one')
         button.product__btn.btn #{productBtn}
-      li.product__card 
+      li.product__card(tabindex='0' data-path='two')
         button.product__btn.btn #{productBtn}
-      li.product__card 
+      li.product__card(tabindex='0' data-path='three')  
         button.product__btn.btn #{productBtn}
