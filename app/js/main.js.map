@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.js","sourcesContent":[]}
+{"version":3,"sources":["main.js"],"names":["$","accordion"],"mappings":"AAAAA,GAAG,WACDA,EAAG,cAAeC","file":"main.js","sourcesContent":["$( function() {\n  $( \"#accordion\" ).accordion();\n} );"]}
