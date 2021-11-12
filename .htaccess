@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^telegram-helper(\/.*)?$ telegram-helper/app$1  [L,R=301,NC]
