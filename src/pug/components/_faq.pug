@@ -1,0 +1,44 @@
+block faqVars 
+  - var faqUpHeading = 'FAQ';
+  - var faqHeading = 'Часто задаваемые вопросы';
+  - var accordionHeading1 = 'Что делает наш бот?';
+  - var accordionDesc1 = 'Наш бот - нейросеть или же искусственный интеллект нами было обработано кучу данных. Мы помогаем вам сделать ставку. Винрейт наших ботов более 80%.';
+  - var accordionHeading2 = 'Существуют ли у вас партнёрские программы? ';
+  - var accordionHeading3 = 'Каковы ваши цели?';
+  - var accordionHeading4 = 'Как я могу поддержать ваш проект?';
+  - var accordionHeading5 = 'Существуют ли доказательство работоспособности?';
+
+
+
+
+section.faq#faq
+  .container.faq__container 
+    .faq__title 
+      span.faq__up-heading.up-heading #{faqUpHeading}
+      h2.faq__heading.heading #{faqHeading}
+    #accordion
+      h3.accordion__heading.desc
+        span.accordion__num 1
+        | #{accordionHeading1}
+      .accordion__desc
+        p.desc #{accordionDesc1}
+      h3.accordion__heading.desc 
+        span.accordion__num 2
+        | #{accordionHeading2}
+      .accordion__desc
+        p.desc #{accordionDesc1}
+      h3.accordion__heading.desc 
+        span.accordion__num 3
+        | #{accordionHeading3}
+      .accordion__desc
+        p.desc #{accordionDesc1}
+      h3.accordion__heading.desc 
+        span.accordion__num 4
+        | #{accordionHeading4}
+      .accordion__desc
+        p.desc #{accordionDesc1}
+      h3.accordion__heading.desc 
+        span.accordion__num 5
+        | #{accordionHeading5}
+      .accordion__desc
+        p.desc #{accordionDesc1}

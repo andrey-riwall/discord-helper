@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: var(--color-bg);
+}
+
 *,
 *::before,
 *::after {
@@ -12,13 +16,15 @@ html {
   text-decoration: none;
   list-style: none;
 
-  font-family: '', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
 }
 
 img {
   max-width: 100%;
 }
 
+input,
 button {
   border: none;
   background: transparent;

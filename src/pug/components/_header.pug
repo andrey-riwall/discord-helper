@@ -1,14 +1,23 @@
 block headerVars 
-  - var menuValues = [ '', ];
+  - var headerNav1 = 'Продукт';
+  - var headerNav2 = 'О нас';
+  - var headerNav3 = 'FAQ';
+
+  - var headerBtn = 'Telegram-бот';
 
 header.header 
   .container.header__container 
 
     a.header__logo(href='#')
-      +svg('header--logo')
+      img(src="img/header/logo.png", alt="logo")
 
     nav.header__nav.nav 
       ul.nav__list 
-        each value in menuValues 
-          li.nav__item
-            a.nav__link(href="#") #{value}
+        li.nav__item
+          a.nav__link(href='#product') #{headerNav1}
+        li.nav__item
+          a.nav__link(href='#about') #{headerNav2}
+        li.nav__item
+          a.nav__link(href='#faq') #{headerNav3}
+
+    button.header__btn.btn_tg#headerBtn #{headerBtn}

@@ -1,0 +1,29 @@
+.faq {
+  padding: vw(45);
+}
+
+#accordion {
+  width: vw(750);
+}
+
+.accordion__heading {
+  cursor: pointer;
+}
+
+.accordion__heading,
+.accordion__desc {
+  padding: vw(16) 0;
+}
+
+.accordion__heading.ui-state-active {
+  border-bottom: vw(1) solid var(--color-text);
+}
+
+.accordion__num {
+  font-style: italic;
+  font-weight: 900;
+  font-size: vw(36);
+  line-height: 150%;
+
+  margin-right: vw(50);
+}

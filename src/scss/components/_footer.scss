@@ -1,0 +1,12 @@
+.footer {
+  height: vw(70);
+  background: var(--color-bg-footer);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}

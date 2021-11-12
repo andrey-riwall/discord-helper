@@ -1,5 +1,15 @@
 block footerVars
-  - var footerValues = [ '', ];
+  - var footerNav1 = 'Продукт';
+  - var footerNav3 = 'О нас';
+  - var footerNav2 = 'FAQ';
 
-footer.footer 
+footer.footer#footer
   .container.footer__container
+    .footer__nav.nav 
+      ul.nav__list
+        li.nav__item 
+          a.nav__link(href='#product') #{footerNav1}
+        li.nav__item 
+          a.nav__link(href='#about') #{footerNav2}
+        li.nav__item 
+          a.nav__link(href='#faq') #{footerNav3}

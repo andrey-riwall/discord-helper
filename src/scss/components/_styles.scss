@@ -1,0 +1,51 @@
+.up-heading {
+  display: block;
+  font-weight: 700;
+  font-size: vw(14);
+  line-height: 100%;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-desc);
+
+  margin-bottom: vw(10);
+}
+
+.heading {
+  font-size: vw(36);
+  line-height: 100%;
+
+  margin-bottom: vw(40);
+}
+
+
+
+.desc {
+  font-weight: 400;
+  font-size: vw(24);
+  line-height: 150%;
+  color: var(--color-desc);
+}
+
+
+
+.btn_tg {
+  font-weight: 500;
+  font-size: vw(18);
+  line-height: 100%;
+  color: var(--color-main);
+
+  padding: vw(10) vw(28) vw(11) vw(28);
+  border: vw(1) solid var(--color-main);
+  border-radius: vw(10);
+}
+
+.btn {
+  padding: vw(14) vw(28);
+  background: var(--color-btn);
+  border-radius: vw(5);
+
+  font-weight: 500;
+  font-size: vw(18);
+  line-height: 100%;
+  color: var(--color-main);
+}
