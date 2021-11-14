@@ -45,6 +45,8 @@
 
   width: vw(40);
   height: vw(40);
+  
+  cursor: pointer;
 
   @include medium {
     width: vw(80);
